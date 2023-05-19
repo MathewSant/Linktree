@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/background.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  display: flex;
+  align-items: center;
+}
+.container-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #80b0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+label {
+  font-weight: 600;
+}
+input,
+select {
+  gap: 0.5rem;
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-cancel {
+  background-color: gray;
+}
+
+.button-save {
+  background-color: #3065ac;
+}

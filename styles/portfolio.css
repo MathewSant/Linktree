@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/home/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Creepster", cursive;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  transition: 0.6s;
+  letter-spacing: 5px;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+h1:hover {
+  letter-spacing: 15px;
+}
+.text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mySites {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin-bottom: 20vh;
+}
+.paragraph-img {
+  margin-bottom: 5px;
+  font-size: 17px;
+  /* display: none; */
+  transition: opacity 0.3s ease-in;
+}
+.text {
+  min-height: 200px;
+  position: relative;
+}
+.buttons {
+  /* display: inline-block; */
+  /* padding: 4px; */
+  margin: 10px;
+  background-color: transparent;
+  /* position: absolute; */
+  /* border: 2px solid #212992; */
+  border-radius: 5px;
+  width: 295px;
+  height: 165px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  /* color: #00d7c3; */
+  /* border: 0.1px solid #dadada; */
+}
+.buttons:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 #bbbbbb inset, 0 0 20px 2px #bbbbbb;
+  border: 0px solid #bbbbbb;
+}
+@keyframes neon-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#imagem {
+  width: 300px;
+}
+.random-image {
+  width: 320px;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.random-image.show {
+  opacity: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+  .random-image {
+    /* width: 200px; */
+    display: none;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logoPortal.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/styleRegister.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Inserir Registro</h2>
+    </header>
+    <hr />
+    <div class="container-form">
+      <form action="../controller/register.php" method="post">
+        <div>
+          <div>
+            <label for="name">Nome</label>
+          </div>
+          <input
+            type="text"
+            id="name"
+            name="nome"
+            placeholder="Nome"
+            required
+          />
+          <div>
+            <label for="email">Email</label>
+          </div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <div>
+            <label for="email">Senha</label>
+          </div>
+          <input
+            type="password"
+            id="password"
+            name="senha"
+            placeholder="Senha"
+            required
+          />
+        </div>
+        <div>
+          <div>
+            <label for="cpf">CPF</label>
+          </div>
+          <input type="text" id="cpf" name="cpf" placeholder="CPF" required />
+          <div>
+            <label for="tel">Telefone</label>
+          </div>
+          <input type="tel" id="tel" name="telefone" placeholder="Telefone" />
+        </div>
+        <div>
+          <div>
+            <label for="address">Endereço</label>
+          </div>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Endereço"
+            required
+          />
+          <div>
+            <label for="sexo">Sexo:</label>
+          </div>
+          <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            <label for="date">Data Nascimento</label>
+          </div>
+          <input type="date" id="date" name="data_nascimento" required />
+          <!-- <div>
+            <label for="image">Imagem</label>
+          </div>
+          <input type="file" id="image" name="imagem"  /> -->
+        </div>
+
+        <div>
+          <button class="button-cancel buttons" type="submit">Cancelar</button>
+          <button class="button-save buttons" type="submit">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

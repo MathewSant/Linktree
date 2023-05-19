@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/logoPortal.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/user.css" />
+    <title>Usuário</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="../js/user.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="perfil">
+          <img src="" alt="" class="img-perfil" />
+          <p>{{nome}}</p>
+        </div>
+        <div>
+          <button class="button-data">Dados</button>
+        </div>
+      </div>
+      <div class="box">
+        <form name="search">
+          <input
+            type="text"
+            class="input"
+            name="txt"
+            onmouseout="this.value = ''; this.blur();"
+          />
+        </form>
+        <i class="bi bi-search"></i>
+      </div>
+      <div class="buttons">
+        <div>
+          <i class="bi bi-bell-fill"></i>
+          <button class="button-select" onclick="exibirSelect()">
+            <i class="bi bi-caret-down"></i>
+          </button>
+
+          <a href="./index.html"><i class="bi bi-box-arrow-left fs-1"></i></a>
+        </div>
+        <div class="select-wrapper"></div>
+      </div>
+    </header>
+    <section>
+      <button class="button-section">
+        <img src="../img/megafone.png" alt="megafone" class="img-section" />
+
+        <a href="/aviso"
+          ><p>
+            <span>Avisos</span>Veja aqui os avisos mais recentes publicados
+            pelos professores.
+          </p></a
+        >
+      </button>
+      <button class="button-section">
+        <img src="../img/editar.png" alt="diario" class="img-section" />
+        <a href="disciplina">
+          <p>
+            <span>disciplina</span>Aqui estão notas de atividades, trabalhos e
+            etc.
+          </p></a
+        >
+      </button>
+      <button class="button-section">
+        <img src="../img/documento.png" alt="boletim" class="img-section" />
+        <a href="boletim">
+          <p>
+            <span>Boletim</span>Notas e faltas do semestre aparecerão aqui.
+          </p></a
+        >
+      </button>
+      <button class="button-section">
+        <img src="../img/register.png" alt="boletim" class="img-section" />
+        <a href="register">
+          <p><span>Registro</span>Seus registros estão aqui.</p></a
+        >
+      </button>
+      <button class="button-section">
+        <img src="../img/requeridos.png" alt="boletim" class="img-section" />
+        <a href="requeriments.html">
+          <p>
+            <span>Requerimentos</span>Faça seus requerimentos pro bloco
+            administrativo.
+          </p></a
+        >
+      </button>
+    </section>
+  </body>
+</html>

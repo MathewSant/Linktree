@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+}
+
+/* Screen One */
+
+.screen-one {
+  background-image: url("../../images/HumanSpaceFly/01.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+.nav-bar {
+  margin-left: 45px;
+}
+
+.img-logo {
+  width: 190px;
+}
+
+.nav-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.text-big {
+  font-size: 120px;
+}
+
+.text-sm {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.section-container {
+  width: auto;
+}
+
+.text-screen-one {
+  margin-top: 10vh;
+}
+
+.arrowDown {
+  width: 110px;
+}
+
+/* contact */
+.contact {
+  background-color: black;
+  height: 27vh;
+}
+.contact-structure {
+  margin-right: 14vw;
+  margin-left: 14vw;
+}
+.contact p {
+  color: #c7c7c7;
+  font-size: 20px;
+  margin-right: 15vh;
+  margin-left: 15vh;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding-bottom: 3px;
+}
+
+.contact a:hover {
+  color: #1c1ca3;
+  border-bottom: 2px solid #1c1ca3;
+}
+
+/* Screen-Two  */
+
+.screen-two {
+  background-image: url("../../images/HumanSpaceFly/02.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.itens-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25vh;
+  margin-right: 3vh;
+  color: #fff;
+}
+
+.itens-container h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.btn-exploring {
+  width: 180px;
+  padding: 15px;
+  border: 1px #fff solid;
+}
+
+/* screen three */
+.screen-three {
+  background-image: url("../../images/HumanSpaceFly/03.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.itens-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28vh;
+  color: #fff;
+}
+
+.itens-text h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.text-bottom {
+  font-weight: 300;
+}
+
+/* screen four */
+
+.screen-four {
+  background-image: url("../../images/HumanSpaceFly/04.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+.texts-itens {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28vh;
+  margin-right: 12%;
+  color: #fff;
+}
+
+.texts-itens h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/* screen-five */
+
+.screen-five {
+  background-image: url("../../images/HumanSpaceFly/05.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+/* screen-six */
+
+.screen-six {
+  background-color: #000;
+  height: 100vh;
+}
+
+.section-screen-six {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+}
+
+.section-itens p {
+  color: #fff;
+}
+
+.section-itens a {
+  color: #a1a1a1;
+  text-decoration: none;
+  border-bottom: none;
+  padding-bottom: 3px;
+}
+
+.btn-screen-six {
+  width: 230px;
+
+  height: 60px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+
+.section-itens a:hover {
+  color: #fff;
+  text-decoration: solid;
+  border-bottom: #fff 1px solid;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 13.5px;
+  height: 100px;
+  background-color: #000;
+}
+.itens-footer {
+  display: flex;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #a8a7a7;
+}
+
+/* mobile */
+
+@media (max-width: 820px) {
+  .text-big {
+    font-size: 100px;
+  }
+  .text-sm {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .contact-structure {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 685px) {
+  .text-big {
+    font-size: 80px;
+  }
+  .text-sm {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .screen-one {
+    background-position: center;
+  }
+  .screen-two {
+    background-position: center;
+  }
+  .screen-three {
+    background-position: center;
+  }
+  .screen-four {
+    background-position: center;
+  }
+  .screen-five {
+    background-position: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .text-big {
+    font-size: 65px;
+  }
+  .text-sm {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .btn-screen-six {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 465px) {
+  .text-big {
+    font-size: 55px;
+  }
+  .text-sm {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+  }
+  .img-logo {
+    width: 200px;
+  }
+  .itens-container h2 {
+    font-size: 50px;
+  }
+  .itens-text h2 {
+    font-size: 50px;
+  }
+  .texts-itens h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 410px) {
+  .text-big {
+    font-size: 50px;
+  }
+  .text-sm {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+  }
+  .arrowDown {
+    width: 90px;
+  }
+  .img-logo {
+    width: 180px;
+  }
+  .nav-bar {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-big {
+    font-size: 42px;
+  }
+  .text-sm {
+    font-size: 20px;
+  }
+  .contact p {
+    font-size: 18px;
+  }
+}

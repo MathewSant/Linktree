@@ -1,0 +1,28 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.user{
+    background-color: gray;
+    margin: 10px;
+}
+.user > img{
+    border-radius: 50%;
+
+}
+.user > li{
+
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+}
+a{
+    color: blue;
+}

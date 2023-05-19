@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador</title>
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./img/logoPortal.png" type="image/x-icon" />
+    <!-- link css -->
+    <link rel="stylesheet" href="/css/adm.css" />
+    <!-- icons bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- link Js -->
+    <script src="../js/adm.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="perfil">
+          <img src="" alt="" class="img-perfil" />
+          <p>{{nome}}</p>
+        </div>
+        <div>
+          <button class="button-data">Dados</button>
+        </div>
+      </div>
+      <div class="box">
+        <form name="search">
+          <input
+            type="text"
+            class="input"
+            name="txt"
+            onmouseout="this.value = ''; this.blur();"
+          />
+        </form>
+        <i class="bi bi-search"></i>
+      </div>
+      <div class="buttons">
+        <div>
+          <i class="bi bi-bell-fill"></i>
+          <button class="button-select" onclick="exibirSelect()">
+            <i class="bi bi-caret-down"></i>
+          </button>
+
+          <a href="./index.html"><i class="bi bi-box-arrow-left fs-1"></i></a>
+        </div>
+        <div class="select-wrapper"></div>
+      </div>
+    </header>
+    <section>
+      <button class="button-section">
+        <img src="../img/documento.png" alt="megafone" class="img-section" />
+
+        <a href="registroAluno.html"
+          ><p><span>Registro</span>Inserir registro de um aluno</p></a
+        >
+      </button>
+    </section>
+  </body>
+</html>

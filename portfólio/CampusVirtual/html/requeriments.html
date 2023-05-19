@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../img/logoPortal.png"
+      type="image/x-icon"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="img">
+          <a href="user.html">
+            <img class="img-logo" id="logoNoS" src="../img/logoPortal.png" alt="logo" />
+          </a>
+        </div>
+        <div class="texts">
+          <h2>Bem ao formulario de requerimentos</h2>
+          <span>envie seus requerimentos!</span>
+        </div>
+
+      </div>
+      <div class="container-right">
+        <div class="title">
+          <h1>requerimentos</h1>
+        </div>
+        <div class="forms">
+          <form action="register/requeriments" method="post">
+            <div class="login-conjunt">
+              <label for="login">ID</label>
+              <input
+                type="text"
+                id="login"
+                name="id"
+                placeholder="Digite seu ID"
+              />
+            </div>
+            <div class="password-conjunt">
+              <div class="password-subconjunt">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="password"
+                  name="email"
+                  placeholder="Digite seu email"
+                />
+              </div>
+
+              </div>
+              <div class="password-conjunt">
+                <div class="password-subconjunt">
+                  <label for="password">senha</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="senha"
+                    placeholder="Digite seua senha"
+                  />
+                </div>
+
+                </div>
+              <div class="password-conjunt">
+                <div class="password-subconjunt">
+                  <label for="password" >requerimento</label>
+                  <br>
+                  <textarea id="story" name="content"
+                  rows="8" cols="30"  >
+                  </textarea>
+                </div>
+
+                </div>
+            </div>
+            <button class="entrance">enviar</button>
+          </form>
+        </div>
+        <div class="hidden">
+          <input type="hidden" />
+        </div>
+      </div>
+    </div>
+    <script src="./js/scriptLogin.js"></script>
+  </body>
+</html>

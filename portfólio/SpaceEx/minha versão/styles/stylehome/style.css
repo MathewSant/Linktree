@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+}
+
+/* Tela 1 */
+.screen-one {
+  background-image: url("../../images/home/01.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+.nav-bar {
+  margin-left: 45px;
+}
+.img-logo {
+  width: 190px;
+}
+
+.nav-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.section-container {
+  width: auto;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.centralize {
+  margin-top: 15vh;
+}
+
+.btn-know-more {
+  padding: 15px 35px;
+  border: 2px #fff solid;
+}
+
+.arrowDown {
+  width: 100px;
+  margin-top: 20vh;
+}
+
+/* Tela 2 */
+
+.screen-two {
+  background-image: url("../../images/home/03.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+.screen-three {
+  background-image: url("../../images/home/02.gif");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+.screen-four {
+  background-image: url("../../images/home/04.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 13.5px;
+  height: 100px;
+  background-color: #000;
+}
+.itens-footer {
+  display: flex;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #a8a7a7;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  .screen-one {
+    background-position: center;
+  }
+  .screen-two {
+    background-position: center;
+  }
+  .screen-three {
+    background-position: center;
+  }
+  .screen-four {
+    background-position: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .img-logo {
+    width: 180px;
+  }
+  .nav-bar {
+    margin-left: 0;
+  }
+  section {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .img-logo {
+    width: 180px;
+  }
+  .nav-bar {
+    margin-left: 0;
+  }
+}
