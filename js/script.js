@@ -37,19 +37,6 @@ function mostrarNovaImagem() {
   imgElement.src = imagePath;
   imgElement.classList.add("random-image");
 
-  // Define a posição aleatória de exibição na tela
-  const posX = Math.random() * (window.innerWidth - imgElement.width);
-  const posY = Math.random() * (window.innerHeight - imgElement.height);
-
-  // Define a posição absoluta da imagem
-  imgElement.style.position = "absolute";
-  imgElement.style.left = posX + "px";
-  imgElement.style.top = posY + "px";
-
-  // Adiciona a imagem ao container
-  const container = document.getElementById("container");
-  container.appendChild(imgElement);
-
   // Aguarda um pequeno intervalo de tempo antes de exibir a imagem
   setTimeout(function () {
     imgElement.style.opacity = 1;
@@ -57,10 +44,29 @@ function mostrarNovaImagem() {
 
   // Armazena a referência para a imagem atual
   currentImage = imgElement;
+
+  // Adiciona a imagem ao container
+  const container = document.getElementById("container");
+  container.appendChild(imgElement);
+
+  // Define a posição aleatória de exibição na tela
+  function setRandomPosition() {
+    const posX = Math.random() * (window.innerWidth - imgElement.width);
+    const posY = Math.random() * (window.innerHeight - imgElement.height);
+
+    // Define a posição absoluta da imagem
+    imgElement.style.cssText = `position: absolute; left: ${posX}px; top: ${posY}px;`;
+  }
+
+  // Chama a função para definir a posição aleatória inicialmente
+  setRandomPosition();
+
+  // Atualiza a posição da imagem ao redimensionar a janela
+  window.addEventListener("resize", setRandomPosition);
 }
 
 // Chama a função para exibir uma imagem aleatória inicialmente
 exibirImagemAleatoria();
 
-// Define um intervalo para exibir uma nova imagem a cada 2 segundos
+// Define um intervalo para exibir uma nova imagem a cada 4 segundos
 setInterval(exibirImagemAleatoria, 4000);

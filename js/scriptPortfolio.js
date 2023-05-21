@@ -4,11 +4,9 @@ const images = [
   // Adicione mais caminhos de imagens, se necessário
 ];
 
-let currentImage = null; // Variável para armazenar a imagem atual
+let currentImage = null;
 
-// Função para criar e exibir uma imagem em um lugar aleatório da tela
 function exibirImagemAleatoria() {
-  // Remove a imagem anterior, se existir
   if (currentImage) {
     currentImage.style.opacity = 0;
     currentImage.addEventListener(
@@ -24,43 +22,43 @@ function exibirImagemAleatoria() {
   }
 }
 
-// Função para mostrar uma nova imagem
 function mostrarNovaImagem() {
-  // Seleciona um índice aleatório do array de imagens
   const randomIndex = Math.floor(Math.random() * images.length);
 
-  // Obtém o caminho da imagem aleatória
   const imagePath = images[randomIndex];
 
-  // Cria um novo elemento de imagem
   const imgElement = document.createElement("img");
   imgElement.src = imagePath;
   imgElement.classList.add("random-image");
 
-  // Define a posição aleatória de exibição na tela
-  const posX = Math.random() * (window.innerWidth - imgElement.width);
-  const posY = Math.random() * (window.innerHeight - imgElement.height);
+  setTimeout(function () {
+    imgElement.style.opacity = 1;
+  }, 1000);
 
-  // Define a posição absoluta da imagem
-  imgElement.style.position = "absolute";
-  imgElement.style.left = posX + "px";
-  imgElement.style.top = posY + "px";
+  currentImage = imgElement;
 
-  // Adiciona a imagem ao container
   const container = document.getElementById("container");
   container.appendChild(imgElement);
 
-  // Aguarda um pequeno intervalo de tempo antes de exibir a imagem
-  setTimeout(function () {
-    imgElement.style.opacity = 1;
-  }, 300);
+  function setRandomPosition() {
+    const posX = Math.random() * (window.innerWidth - imgElement.width);
+    const posY = Math.random() * (window.innerHeight - imgElement.height);
 
-  // Armazena a referência para a imagem atual
-  currentImage = imgElement;
+    imgElement.style.cssText = `position: absolute; left: ${posX}px; top: ${posY}px;`;
+  }
+
+  setRandomPosition();
+
+  window.addEventListener("resize", setRandomPosition);
 }
 
-// Chama a função para exibir uma imagem aleatória inicialmente
 exibirImagemAleatoria();
 
-// Define um intervalo para exibir uma nova imagem a cada 2 segundos
-setInterval(exibirImagemAleatoria, 2000);
+setInterval(exibirImagemAleatoria, 4000);
+
+const linkIcon = document.querySelector(".link-icon");
+linkIcon.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  window.location.href = "./index.html";
+});
